@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cutting app</title>
+</head>
+<body>
+    <main>
+        <div class="cutting-method">
+            <div class="tit">
+                Cutting Method
+            </div>
+            <div class="context-method">
+                <img class="img-method" src="methodimg.jpg" alt="">
+                <div class="method-name">Side milling</div>
+            </div>
+        </div>
+        <div class="adjust-parameters">
+            <div class="tit">
+                Adjust parameters
+            </div>
+            <div class="context-ad">
+                <div class="titles">
+                    <div class="tit-2">Desired number of passes (ap)</div>
+                    <div class="tit-lim">[1-24]</div>
+                </div>
+                <div class="inputs">
+                    <input id="input1" class="input" value="1" type="number">
+                </div>
+                <div class="titles">
+                    <div class="tit-2">Radial engagement calculation</div>
+                    <div class="tit-lim"></div>
+                </div>
+                <div class="inputs">
+                    <select class="select" name="" id="">
+                        <option value="Numberofpasses">Number of passes</option>
+                    </select>
+                </div>
+                <div class="titles">
+                    <div class="tit-2">Desired number of passes (ae)</div>
+                    <div class="tit-lim">[1-75]</div>
+                </div>
+                <div class="inputs">
+                    <input id="input2" class="input" value="1" type="number">
+                </div>
+                <div class="titles">
+                    <div class="tit-2">Desired feed/tooth</div>
+                    <div class="tit-lim">[0.0543 - 0.0898]</div>
+                </div>
+                <div class="inputs">
+                    <input id="input3" class="input" value="0.075" type="number">
+                </div>
+                <div class="titles">
+                    <div class="tit-2">Desired cutting speed</div>
+                    <div class="tit-lim">[1100-2570]</div>
+                </div>
+                <div class="inputs">
+                    <input id="input4" class="input" value="1725" type="number">
+                </div>
+                <div class="titles">
+                    <div class="tit-2">Stock(Sap)</div>
+                    <div class="tit-lim"></div>
+                </div>
+                <div class="inputs">
+                    <input id="input5" class="input" value="2.50" type="number">
+                </div>
+                <div class="titles">
+                    <div class="tit-2">Stock(Sae)</div>
+                    <div class="tit-lim"></div>
+                </div>
+                <div class="inputs">
+                    <input id="input6" class="input" value="24.0" type="number">
+                </div>
+                <div class="button-calculate">
+                    Recalculate
+                </div>
+                <div class="button-reset">
+                    Reset
+                </div>
+            </div>
+        </div>
+        <div class="cutting-data-results">
+            <div class="tit">
+                Cutting data results
+            </div>
+            <div class="context-res">
+                <div class="results-items">
+                    <div class="res-tit">
+                        Number of passes (ap)
+                    </div>
+                    <div class="resulted result-1"></div>
+                </div>
+                <div class="results-items">
+                    <div class="res-tit">
+                        Depth of cut (ap)
+                    </div>
+                    <div class="result-2 resulted">mm</div>
+                </div>
+                <div class="results-items">
+                    <div class="res-tit">
+                        Number of passes (ae)
+                    </div>
+                    <div class="result-3 resulted"></div>
+                </div>
+                <div class="results-items">
+                    <div class="res-tit">
+                        Radial engagement (ae)
+                    </div>
+                    <div class="result-4 resulted"></div>
+                </div>
+                <div class="results-items">
+                    <div class="res-tit">
+                        Radial engagement as % <br> of DC
+                    </div>
+                    <div class="result-5 resulted"></div>
+                </div>
+                <div class="results-items">
+                    <div class="res-tit">
+                        Feed/tooth
+                    </div>
+                    <div class="result-6 resulted"></div>
+                </div>
+                <div class="results-items">
+                    <div class="res-tit">
+                        Cutting speed
+                    </div>
+                    <div class="result-7 resulted"></div>
+                </div>
+                <div class="results-items">
+                    <div class="res-tit">
+                        Coolant media
+                    </div>
+                    <div class="result-8 resulted">Emulsion</div>
+                </div>
+                <div class="results-items">
+                    <div class="res-tit">
+                        RPM
+                    </div>
+                    <div class="result-9 resulted"></div>
+                </div>
+                <div class="results-items">
+                    <div class="res-tit">
+                        Feed speed
+                    </div>
+                    <div class="result-10 resulted"></div>
+                </div>
+                <div class="results-items">
+                    <div class="res-tit">
+                        Metal removal rate (Q)
+                    </div>
+                    <div class="result-11 resulted"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
